@@ -59,6 +59,16 @@ footer p {
     padding: 0;
 }
 
+footer a {
+  margin: 0;
+  padding: 0;
+  color: white;
+
+  &:hover {
+    color: white;
+  }
+}
+
 video:hover {
     cursor: pointer;
 }
