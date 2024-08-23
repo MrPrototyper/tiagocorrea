@@ -2,8 +2,7 @@ $(document).ready(function () {
     function login(callback) {
         $.ajax({
             type: 'POST',
-            url: 'https://resourcesasaservice.com/login',
-            // url: 'http://127.0.0.1:5000/login',
+            url: 'https://resourcesasaservice.com/login',            
             contentType: 'application/json',            
             data: JSON.stringify({ 'key': '2244012f94f2bcd42e483bd32b9249f3d332a3b468742bc74295e39711e9a1a7' }),            
             success: function (response) {                
@@ -29,7 +28,6 @@ $(document).ready(function () {
             $.ajax({
                 type: 'POST',
                 url: 'https://resourcesasaservice.com/send_email',
-                // url: 'http://127.0.0.1:5000/send_email',
                 headers: {
                     'Authorization': 'Bearer ' + token
                 },
